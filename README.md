@@ -1,5 +1,5 @@
 <a href="https://socratic-ai.vercel.app/">
-  <img alt="socratic.ai." src="https://i.imgur.com/yuZQu8K.png>
+  <img alt="socratic.ai." src="https://i.imgur.com/yuZQu8K.png">
   <h1 align="center">socratic.ai</h1>
 </a>
 
