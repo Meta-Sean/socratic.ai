@@ -1,5 +1,5 @@
-<a href="https://chat.vercel.ai/">
-  <img alt="Next.js 13 and app template Router-ready AI chatbot." src="https://chat.vercel.ai/opengraph-image.png">
+<a href="https://socratic-ai.vercel.app/">
+  <img alt="socratic.ai." src="https://i.imgur.com/yuZQu8K.png>
   <h1 align="center">socratic.ai</h1>
 </a>
 
