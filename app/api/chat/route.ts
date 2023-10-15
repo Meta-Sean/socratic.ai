@@ -28,6 +28,16 @@ export async function POST(req: Request) {
     configuration.apiKey = previewToken
   }
 
+  const systemMessage = {
+    role: "system",
+    content: "You are a helpful and knowledgeable teacher, Socrates, begin by asking what subject the user would like to learn then use the Socratic method to help distill the knowledge. Ask questions about the topic and see if they can answer correctly and correct any mistakes"
+  };
+
+  messages.unshift(systemMessage);
+  console.log(messages)
+
+
+
   const res = await openai.createChatCompletion({
     model: 'gpt-3.5-turbo',
     messages,
