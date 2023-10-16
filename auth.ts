@@ -1,5 +1,6 @@
 import NextAuth, { type DefaultSession } from 'next-auth'
 import GitHub from 'next-auth/providers/github'
+import Google from 'next-auth/providers/google'
 
 declare module 'next-auth' {
   interface Session {
@@ -15,7 +16,14 @@ export const {
   auth,
   CSRF_experimental // will be removed in future
 } = NextAuth({
-  providers: [GitHub],
+  providers: [
+    GitHub,
+    Google({
+      clientId: process.env.GOOGLE_CLIENT_ID,
+      clientSecret: process.env.GOOGLE_CLIENT_SECRET
+    }),
+    // ... add any other providers here ...
+  ],
   callbacks: {
     jwt({ token, profile }) {
       if (profile) {
@@ -29,6 +37,6 @@ export const {
     }
   },
   pages: {
-    signIn: '/sign-in' // overrides the next-auth default signin page https://authjs.dev/guides/basics/pages
+    signIn: '/sign-in' // overrides the next-auth default signin page
   }
 })
