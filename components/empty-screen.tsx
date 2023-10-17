@@ -6,18 +6,19 @@ import { IconArrowRight } from '@/components/ui/icons'
 
 const exampleMessages = [
   {
-    heading: 'Explain technical concepts',
-    message: `What is a "serverless function"?`
+    heading: 'Explore the fundamentals of deep learning',
+    message: `Let's delve into the basics of deep learning today using the Socratic method. Why do you think "deep" is used to describe this type of learning, Socrates?`
   },
   {
-    heading: 'Summarize an article',
-    message: 'Summarize the following article for a 2nd grader: \n'
+    heading: 'Understanding historical events',
+    message: `Today, we'll uncover the reasons behind the Renaissance using the Socratic method. What do you believe spurred this significant period of cultural, art, political, and economic "rebirth", Socrates?`
   },
   {
-    heading: 'Draft an email',
-    message: `Draft an email to my boss about the following: \n`
+    heading: 'Grasp the essence of quantum mechanics',
+    message: `Let's explore the perplexing world of quantum mechanics using the Socratic method. Why might an electron exist in multiple states simultaneously, Socrates?`
   }
 ]
+
 
 export function EmptyScreen({ setInput }: Pick<UseChatHelpers, 'setInput'>) {
   return (
