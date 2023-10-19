@@ -28,7 +28,16 @@ export async function POST(req: Request) {
   messages.unshift(systemMessage);
   console.log(messages);
 
-  const prompt = messages.map((msg: { role: string; content: string }) => `<s>[INST]${msg.role}: ${msg.content}[/INST]`).join('\n');
+  const prompt = messages.map((msg: { role: string; content: string }) => {
+    if (msg.role === "user") {
+      return `<s>[INST]${msg.content}[/INST]`;
+    } else if (msg.role === "assistant") {
+      return `${msg.content}[/INST]</s>`;
+    } else {
+      return `[INST]${msg.content}[/INST]`;  // Default case, can be adjusted if needed
+    }
+  }).join('\n');
+
   const response = await Hf.textGenerationStream({
     model: "mistralai/Mistral-7B-Instruct-v0.1",
     inputs: prompt,
