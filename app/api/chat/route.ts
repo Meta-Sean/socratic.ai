@@ -34,7 +34,6 @@ export async function POST(req: Request) {
     inputs: prompt,
     parameters: {
       max_new_tokens: 200,
-      typical_p: 0.2,
       repetition_penalty: 1,
       truncate: 1000,
       return_full_text: false,
