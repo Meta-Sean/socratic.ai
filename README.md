@@ -2,7 +2,7 @@
   <img alt="socratic.ai." src="https://i.imgur.com/yuZQu8K.png">
   <h1 align="center">socratic.ai</h1>
 </a>
-[socratic.ai](https://socratic-ai.vercel.app)
+https://socratic-ai.vercel.app
 <p align="center">
   An open-source AI chatbot that follows the socratic method to help you learn!
   socratic.ai
