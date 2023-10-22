@@ -5,7 +5,7 @@
 
 <p align="center">
   An open-source AI chatbot that follows the socratic method to help you learn!
-  socratic-ai.vercel.app
+  [socratic.ai](https://socratic-ai.vercel.app)
 </p>
 
 <p align="center">
